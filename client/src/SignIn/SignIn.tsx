@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import jwtDecode from "jwt-decode";
 
 declare global {
@@ -6,34 +6,37 @@ declare global {
     google: any;
   }
 }
+
 function SignIn() {
   const [user, setUser] = useState<any>({});
+  const signInBtnRef = useRef(null);
+
   function handleCallbackResponse(response: any) {
     let userObject = jwtDecode(response.credential);
-    document.getElementById("signInBTN")!.hidden = true;
     if (userObject) setUser(userObject);
   }
+
   function handleSignOut() {
     setUser({});
-    document.getElementById("signInBTN")!.hidden = false;
   }
 
   useEffect(() => {
-    if (window.google) {
-      window.google.accounts.id.initialize({
-        client_id:
-          "999430817633-hvb6en56r7u46belo07j8fl880rla1ag.apps.googleusercontent.com",
-        callback: handleCallbackResponse,
-      });
-      window.google.accounts.id.renderButton(
-        document.getElementById("signInBTN"),
-        {
-          theme: "outline",
-          size: "large",
-        }
-      );
-    }
+    window.google.accounts.id.initialize({
+      client_id:
+        "999430817633-hvb6en56r7u46belo07j8fl880rla1ag.apps.googleusercontent.com",
+      callback: handleCallbackResponse,
+    });
   }, []);
+
+  useEffect(() => {
+    if (signInBtnRef.current) {
+      window.google.accounts.id.renderButton(signInBtnRef.current, {
+        theme: "outline",
+        size: "large",
+      });
+    }
+  }, [signInBtnRef]);
+
   return (
     <div>
       {Object.keys(user).length ? (
@@ -47,8 +50,9 @@ function SignIn() {
       ) : (
         ""
       )}
-      <button id="signInBTN">Sign In</button>
+      <div ref={signInBtnRef}></div>
     </div>
   );
 }
+
 export default SignIn;

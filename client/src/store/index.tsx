@@ -1,14 +1,14 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 const initialState = {
-  currentLanguage: "",
+  signIn: false,
 };
 
 const counterSlice = createSlice({
   name: "addingData",
   initialState,
   reducers: {
-    SetLanguageChange(state, action) {
-      state.currentLanguage = action.payload;
+    SetSignIn(state, action) {
+      state.signIn = action.payload;
     },
   },
 });
