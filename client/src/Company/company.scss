@@ -1,28 +1,14 @@
 .company {
-  background: linear-gradient(90deg, #7c3aed 1%, #2e3238 80%);
   border-radius: 40px;
-  display: flex;
   box-shadow: 4px 8px 10px #4e4d4d;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  width: 50%;
   margin: auto;
   margin-top: 10%;
   animation: slide-in 1s forwards;
 
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    width: 40%;
-    flex-wrap: wrap;
-  }
-  p {
+  p,
+  h2 {
     color: #ffebe5;
     font-size: 1.4rem;
     text-align: left;
@@ -30,9 +16,12 @@
     animation: text-fade-in 1s ease-in-out forwards;
     opacity: 0;
   }
-  img {
-    border-radius: 35px;
+  h2 {
+    font-size: 1.9rem;
+    color: #3d2192;
+    text-align: left;
   }
+ 
   @keyframes slide-in {
     from {
       opacity: 0;
@@ -56,16 +45,3 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .company {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  .company {
-    div {
-      width: 100%;
-    }
-  }
-}
