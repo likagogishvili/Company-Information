@@ -1,11 +1,47 @@
 .bgImg {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-color: #d7beca;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #7c3aed;
+  .welcomediv {
+    margin: auto;
+  }
+  h1 {
+    overflow: hidden;
+    color: #ebebeb;
+    text-align: end;
+    border-right: 0.15em solid #1f2937;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    font-size: clamp(1.9rem, 10%, 5rem);
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #1f2937;
+    }
+  }
 }

@@ -3,14 +3,84 @@
 @tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html,
+input,
+label,
+select,
+div,
+p,
+.headerImg,
+.CircularProgressbar,
+.CircularProgressbar-path,
+.CircularProgressbar-text,
+.CircularProgressbar-trail,
+option {
+  cursor: url("assets/cursor/cursor.cur"), auto !important;
+}
+
+a,
+button,
+path,
+svg,
+rect,
+#s,
+#q,
+img,
+tspan,
+span,
+.moon_icon,
+.info_icon,
+.header_icons {
+  cursor: url("assets/cursor/pointer.cur"), auto !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "SignikaBold";
+  src: local("SignikaBold"),
+    url("./assets/fonts/Signika-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SignikaMedium";
+  src: local("SignikaMedium"),
+    url("./assets/fonts/Signika-Medium.ttf") format("truetype");
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button,
+h6 {
+  font-family: "SignikaMedium";
+  font-feature-settings: "case" on;
+}
+
+h3 {
+  font-family: "SignikaBold";
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
