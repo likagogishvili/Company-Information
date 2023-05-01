@@ -84,3 +84,16 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+::selection {
+  background: #C27663;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #7C3AED;
+  /* color of the scroll thumb */
+}
