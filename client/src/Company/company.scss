@@ -1,25 +1,38 @@
+.companyCont {
+  padding: 5vw 8vw;
+}
 .company {
   border-radius: 40px;
   box-shadow: 4px 8px 10px #4e4d4d;
+  background-color: #1f2937;
   gap: 20px;
   padding: 20px;
-  margin: auto;
-  margin-top: 10%;
-  animation: slide-in 1s forwards;
-
   p,
   h2 {
-    color: #ffebe5;
+    color: #ffacad;
     font-size: 1.4rem;
     text-align: left;
-    line-height: 35px;
+    line-height: 30px;
     opacity: 1;
+    margin-left: 20px;
   }
   h2 {
     font-size: 1.9rem;
-    color: #3d2192;
+    color: #735eff;
     text-align: left;
   }
-
 }
-
+.cronology {
+  margin-top: 5%;
+  background-color: #1f2937;
+  h2 {
+    color: #ffacad;
+  }
+  p {
+    color: #735eff;
+  }
+  .years{
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

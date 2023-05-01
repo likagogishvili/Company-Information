@@ -1,0 +1,24 @@
+.team {
+  border-radius: 40px;
+  box-shadow: 4px 8px 10px #ed9255;
+  gap: 20px;
+  margin-top: 7%;
+  padding: 30px;
+
+  .images {
+    width: 180px;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  p {
+    color: #e08a5a;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 30px;
+    opacity: 1;
+    text-transform: uppercase;
+  }
+}

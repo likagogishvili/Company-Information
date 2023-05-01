@@ -1,6 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import jwtDecode from "jwt-decode";
+import { useDispatch } from "react-redux";
+import { counterActions } from "../store/index";
+import { useShowSignIn } from "../store/selectors/Selctors";
 
+import "./signIn.scss";
 declare global {
   interface Window {
     google: any;
@@ -8,16 +12,13 @@ declare global {
 }
 
 function SignIn() {
-  const [user, setUser] = useState<any>({});
-  const signInBtnRef = useRef(null);
-
+  const showSignIn = useShowSignIn();
+  const dispatch = useDispatch();
   function handleCallbackResponse(response: any) {
     let userObject = jwtDecode(response.credential);
-    if (userObject) setUser(userObject);
-  }
-
-  function handleSignOut() {
-    setUser({});
+    if (userObject) dispatch(counterActions.SetUser(userObject));
+    dispatch(counterActions.SetSignIn(!showSignIn));
+    document.getElementById("signInWithGoogle")!.style.display = "none";
   }
 
   useEffect(() => {
@@ -26,31 +27,19 @@ function SignIn() {
         "999430817633-hvb6en56r7u46belo07j8fl880rla1ag.apps.googleusercontent.com",
       callback: handleCallbackResponse,
     });
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
-    if (signInBtnRef.current) {
-      window.google.accounts.id.renderButton(signInBtnRef.current, {
-        theme: "outline",
-        size: "large",
-      });
-    }
-  }, [signInBtnRef]);
+    window.google.accounts.id.renderButton(
+      document.getElementById("signInWithGoogle"),
+      {}
+    );
+  }, []);
 
   return (
-    <div>
-      {Object.keys(user).length ? (
-        <div>
-          <img src={user.picture} alt="" width="20px" height="20px" />
-          <h3>{user.name}</h3>
-          <button id="signOut" onClick={handleSignOut}>
-            Sign out
-          </button>
-        </div>
-      ) : (
-        ""
-      )}
-      <div ref={signInBtnRef}></div>
+    <div className="signInDiv">
+      <div className="signInStyles" id="signInWithGoogle"></div>
     </div>
   );
 }

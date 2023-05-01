@@ -50,15 +50,15 @@ html {
 }
 
 @font-face {
-  font-family: "SignikaBold";
+  font-family: "SourceSansProBold";
   src: local("SignikaBold"),
-    url("./assets/fonts/Signika-Bold.ttf") format("truetype");
+    url("./assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "SignikaMedium";
+  font-family: "SourceSansProRegular";
   src: local("SignikaMedium"),
-    url("./assets/fonts/Signika-Medium.ttf") format("truetype");
+    url("./assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 p,
@@ -71,12 +71,12 @@ h5,
 label,
 button,
 h6 {
-  font-family: "SignikaMedium";
+  font-family: "SourceSansProRegular";
   font-feature-settings: "case" on;
 }
 
 h3 {
-  font-family: "SignikaBold";
+  font-family: "SourceSansProBold";
 }
 
 html,
@@ -86,7 +86,7 @@ body {
 }
 
 ::selection {
-  background: #C27663;
+  background: #c27663;
 }
 
 body::-webkit-scrollbar {
@@ -94,6 +94,6 @@ body::-webkit-scrollbar {
   /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #7C3AED;
+  background-color: #7c3aed;
   /* color of the scroll thumb */
 }

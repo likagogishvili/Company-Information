@@ -1,6 +1,7 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 const initialState = {
   signIn: false,
+  user: {},
 };
 
 const counterSlice = createSlice({
@@ -9,6 +10,9 @@ const counterSlice = createSlice({
   reducers: {
     SetSignIn(state, action) {
       state.signIn = action.payload;
+    },
+    SetUser(state, action) {
+      state.user = action.payload;
     },
   },
 });
