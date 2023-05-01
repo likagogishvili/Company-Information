@@ -11,7 +11,12 @@ function Team() {
         <motion.div
           animate={{ x: 0 }}
           initial={{ x: -100 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.5,
+            repeat: Infinity,
+            repeatDelay: 5,
+          }}
           className="images"
           style={{ backgroundImage: `url(${teamIMG.person1})` }}
         />
@@ -22,7 +27,12 @@ function Team() {
           className="images"
           animate={{ x: 0, y: 0 }}
           initial={{ x: -100, y: -100 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.5,
+            repeat: Infinity,
+            repeatDelay: 5,
+          }}
           style={{ backgroundImage: `url(${teamIMG.person2})` }}
         />
         <p>PO</p>
@@ -31,7 +41,12 @@ function Team() {
         <motion.div
           animate={{ x: 0, y: 0 }}
           initial={{ x: 100, y: -100 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.5,
+            repeat: Infinity,
+            repeatDelay: 5,
+          }}
           className="images"
           style={{ backgroundImage: `url(${teamIMG.person3})` }}
         />
@@ -41,7 +56,12 @@ function Team() {
         <motion.div
           animate={{ x: 0 }}
           initial={{ x: 100 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.5,
+            repeat: Infinity,
+            repeatDelay: 5,
+          }}
           className="images"
           style={{ backgroundImage: `url(${teamIMG.person4})` }}
         />
