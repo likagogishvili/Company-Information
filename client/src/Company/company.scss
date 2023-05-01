@@ -1,5 +1,10 @@
 .companyCont {
   padding: 5vw 8vw;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 50px;
+  box-shadow: 4px 8px 10px #4e4d4d;
 }
 .company {
   border-radius: 40px;
@@ -31,7 +36,7 @@
   p {
     color: #735eff;
   }
-  .years{
+  .years {
     align-items: flex-start;
     justify-content: center;
   }
