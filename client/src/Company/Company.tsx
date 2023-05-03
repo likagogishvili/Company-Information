@@ -28,17 +28,15 @@ function Company() {
         <li></li>
         <li></li>
         <li></li>
-        <img src={person} className="float-right" />
-
+        <img src={person} className="float-right " />
         <motion.div
-          className="company md:max-w-4xl sm:min-w-5xl"
+          className="company"
           animate={{ x: 0 }}
           initial={{ x: -1000 }}
           transition={{ duration: 0.6 }}
         >
           <div className="md:flex">
-            <div className="md:shrink-0"></div>
-            <div className="flex flex-col gap-5  tablet:w-30">
+            <div className="flex flex-col gap-5">
               <motion.h2>Company</motion.h2>
               <motion.p
                 animate={{ opacity: 1 }}
@@ -69,13 +67,13 @@ function Company() {
         </motion.div>
 
         <motion.div
-          className="cronology company md:max-w-4xl sm:min-w-5xl "
+          className="cronology company  "
           animate={{ x: 0 }}
           initial={{ x: -1000 }}
           transition={{ delay: 2.2, duration: 0.6 }}
         >
           <div className="md:flex">
-            <div className="flex flex-col gap-5 " style={{ width: "25vw" }}>
+            <div className="flex flex-col gap-5 ">
               <motion.h2 transition={{ delay: 3, duration: 1 }}>
                 Timeline
               </motion.h2>

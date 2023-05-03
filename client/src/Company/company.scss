@@ -1,15 +1,15 @@
 .companyCont {
-  padding: 5vw 8vw;
-  margin-top: 80px;
+  padding: 5vw 10vw 15vh;
   position: relative;
   img {
     position: relative;
     z-index: 5;
+    display: block;
+    
   }
 
   .company {
     gap: 20px;
-    padding: 20px;
     p,
     h2 {
       color: #321a95;
@@ -19,7 +19,9 @@
       opacity: 1;
       margin-left: 20px;
       z-index: 5;
+
     }
+
     h2 {
       font-size: 2.3rem;
       color: #363636;

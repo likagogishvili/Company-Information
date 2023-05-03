@@ -7,11 +7,12 @@ function Team() {
       className="team_parent"
       style={{ backgroundImage: `url(${teamIMG.shapes})` }}
     >
-      <div
-        className="team flex flex-col md:flex-row m-auto md:max-w-4xl sm:w-100"
-        id="team"
-      >
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
+      <div className="team flex sm:flex-col" id="team">
+        <motion.div
+          className="person"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
           <motion.div
             animate={{ x: 0 }}
             initial={{ x: -100 }}
@@ -24,7 +25,11 @@ function Team() {
           />
           <p>It Team Lead</p>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
+        <motion.div
+          className="person"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
           <motion.div
             className="images"
             animate={{ x: 0, y: 0 }}
@@ -37,7 +42,11 @@ function Team() {
           />
           <p>PO</p>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
+        <motion.div
+          className="person"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
           <motion.div
             animate={{ x: 0, y: 0 }}
             initial={{ x: 100, y: -100 }}
@@ -50,7 +59,11 @@ function Team() {
           />
           <p>CEO</p>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
+        <motion.div
+          className="person"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.7 }}
+        >
           <motion.div
             animate={{ x: 0 }}
             initial={{ x: 100 }}
