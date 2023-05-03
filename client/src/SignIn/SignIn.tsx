@@ -38,7 +38,7 @@ function SignIn() {
   }, []);
 
   return (
-    <div className="signInDiv">
+    <div className="signInDiv slider-thumb">
       <div className="signInStyles" id="signInWithGoogle"></div>
     </div>
   );

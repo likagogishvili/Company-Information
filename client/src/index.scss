@@ -37,7 +37,6 @@ svg,
 rect,
 #s,
 #q,
-img,
 tspan,
 span,
 .moon_icon,
@@ -50,33 +49,24 @@ html {
 }
 
 @font-face {
-  font-family: "SourceSansProBold";
+  font-family: "Inter";
   src: local("SignikaBold"),
-    url("./assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
+    url("./assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "SourceSansProRegular";
+  font-family: "poppins";
   src: local("SignikaMedium"),
-    url("./assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+    url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
-p,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-label,
-button,
-h6 {
-  font-family: "SourceSansProRegular";
-  font-feature-settings: "case" on;
+* {
+  font-family: "poppins";
+  // font-feature-settings: "case" on;
 }
 
-h3 {
-  font-family: "SourceSansProBold";
+h3,h2 {
+  font-family: "Inter";
 }
 
 html,

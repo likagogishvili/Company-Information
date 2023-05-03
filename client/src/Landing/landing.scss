@@ -14,7 +14,7 @@
   }
   h1 {
     overflow: hidden;
-    color: #7C3AED;
+    color: #7c3aed;
     text-align: end;
     border-right: 0.15em solid #1f2937;
     white-space: nowrap;
@@ -44,4 +44,27 @@
       border-color: #1f2937;
     }
   }
+
+
+
+}
+.custom-shape-divider-bottom-1683091921 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1683091921 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1683091921 .shape-fill {
+  fill: #ffffff;
 }

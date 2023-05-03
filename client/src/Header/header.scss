@@ -1,8 +1,13 @@
 header {
   position: fixed;
   width: 100%;
+  background-color: #cdb3cb;
+  z-index: 20;
 }
 
 .nav_item .active {
-  color: #7C3AED ;
+  color: #7c3aed;
+}
+.navItems {
+  color: rebeccapurple !important;
 }

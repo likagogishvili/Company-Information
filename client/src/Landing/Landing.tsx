@@ -13,9 +13,9 @@ function Landing() {
       className="bgImg "
       style={{ backgroundImage: `url(${img.landingBg})` }}
     >
-      <div className="welcomediv pt-20">
+      {/* <div className="welcomediv pt-20">
         <h1 id="home">Welcome {user.name} </h1>
-      </div>
+      </div> */}
       {useShowSignIn() && <SignIn />}
       <Company />
       <Team />
