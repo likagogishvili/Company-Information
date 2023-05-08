@@ -28,9 +28,11 @@ function Company() {
         <li></li>
         <li></li>
         <li></li>
-        <img src={person} className="float-right " />
+        <div className="hidden sm:block">
+        <img src={person} className="float-right" alt=""/>
+        </div>
         <motion.div
-          className="company"
+          className="company "
           animate={{ x: 0 }}
           initial={{ x: -1000 }}
           transition={{ duration: 0.6 }}

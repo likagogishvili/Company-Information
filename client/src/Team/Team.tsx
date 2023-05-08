@@ -7,7 +7,9 @@ function Team() {
       className="team_parent"
       style={{ backgroundImage: `url(${teamIMG.shapes})` }}
     >
-      <div className="team flex sm:flex-col" id="team">
+      <h2>Our Team</h2>
+
+      <div className="team flex sm:flex-row flex-col " id="team">
         <motion.div
           className="person"
           whileHover={{ scale: 1.1 }}

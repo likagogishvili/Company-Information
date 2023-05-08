@@ -1,12 +1,13 @@
 import "./landing.scss";
 import * as img from "../assets/LangingPage/langingImg";
 import SignIn from "../SignIn/SignIn";
-import { useShowSignIn, UseUser } from "../store/selectors/Selctors";
+import { useShowSignIn} from "../store/selectors/Selctors";
 import Company from "../Company/Company";
 import Team from "../Team/Team";
+import Footer from "../Footer/Footer";
 
 function Landing() {
-  const user = UseUser();
+  // const user = UseUser();
 
   return (
     <div
@@ -19,7 +20,8 @@ function Landing() {
       {useShowSignIn() && <SignIn />}
       <Company />
       <Team />
-      <div style={{ height: "1000px" }}></div>
+      <Footer/>
+
     </div>
   );
 }

@@ -2,6 +2,7 @@ import "./header.scss";
 import { useDispatch } from "react-redux";
 import { counterActions } from "../store/index";
 import { useShowSignIn, UseUser } from "../store/selectors/Selctors";
+import { logo } from "../assets/LangingPage/langingImg";
 // @ts-ignore
 import { Link } from "react-scroll";
 function Header() {
@@ -22,13 +23,14 @@ function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="https://flowbite.com" className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-3 h-6 sm:h-9"
+              src={logo}
+              // className="mr-3 h-8 sm:h-9"
+              height='130px'
+              width='130px'
+
               alt="Flowbite Logo"
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
+        
           </a>
           <div className="flex items-center order-2">
             <button
