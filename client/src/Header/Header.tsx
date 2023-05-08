@@ -25,12 +25,10 @@ function Header() {
             <img
               src={logo}
               // className="mr-3 h-8 sm:h-9"
-              height='130px'
-              width='130px'
-
+              height="130px"
+              width="130px"
               alt="Flowbite Logo"
             />
-        
           </a>
           <div className="flex items-center order-2">
             <button
@@ -108,7 +106,7 @@ function Header() {
                   to="team"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-400}
                   duration={500}
                   className="block navItems py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -117,7 +115,7 @@ function Header() {
               </li>
               <li className="nav_item ">
                 <Link
-                  to="contactUs"
+                  to="footer"
                   spy={true}
                   smooth={true}
                   offset={-100}

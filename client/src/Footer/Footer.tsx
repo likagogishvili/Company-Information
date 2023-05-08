@@ -6,7 +6,7 @@ function Footer() {
   var year = currentTime.getFullYear();
 
   return (
-    <footer className="footer-distributed ">
+    <footer className="footer-distributed " id="footer">
       <div className="footer-left">
         <a href="/">
           <div
@@ -40,7 +40,7 @@ function Footer() {
         </p>
       </div>
 
-      <div className="footer-right">
+      <div className="footer-right" >
         <form>
           <div className="flex items-center">
             <h2>contact us</h2>
